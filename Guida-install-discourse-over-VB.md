@@ -1,6 +1,7 @@
 1. Installare ubuntu 22.04 su Virtualbox spuntando però l'opzione per **NON** fare una "unattended installation"
    
    [How to run an Ubuntu Desktop virtual machine using VirtualBox 7 | Ubuntu](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview)
+   **NON ASSEGNARE PIù DELLA METà DEI CORE FISICI (non logici)**
 
 2. Errore di mancanza di dipendenze per virtualbox di python in fase di installazione?
    
@@ -89,8 +90,13 @@
     `bundle exec rake admin:create`
     
     seguite i prompt e avete fatto.
+14. Per far ripartire discourse dopo un reset, è necessario aprire due terminali;
+15. Nel primo digitare
+    `redis-server --daemonize`
+16. Nel secondo digitare
+    `bin/ember-cli -u`
 
-
+Discourse tornerà up and running
 
 
 
